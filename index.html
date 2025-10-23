@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>დავალება 6</title>
+	<title>დავალება 11</title>
 	<link rel="stylesheet" type="text/css" href="src/style.css">
 </head>
 <body>
@@ -36,10 +36,16 @@
 		</nav>
 	</header>
 	
+	<div class="floating-menu">
+		<div class="menu-icon">≡</div>
+	</div>
 
 	<section>
 		<div class=main-container>
-			<img src="src/images/1.png" alt="building1">
+			<div class="top-image">
+				<img src="src/images/1.png" alt="building1">
+			</div>
+
 			<h1>რატომ ვიყენებთ მას და საიდან მოდის ეს ტექსტი?</h1>
 
 			<div class="images">
@@ -89,12 +95,16 @@
 				<div class="contact-info">
 
 					<div class="contact-item">
-						<span class="icon">📞</span>
+						<span class="icon">
+							<img src="src/images/phone.svg"	alt="phone">
+						</span>
 						<p>+995 555 444 333</p>
 					</div>
 
 					<div class="contact-item">
-						<span class="icon">✉️</span>
+						<span class="icon">
+							<img src="src/images/email.svg"	alt="email">
+						</span>
 						<p>example@gmail.com</p>
 					</div>
 
@@ -105,23 +115,23 @@
 			<div class="footer-right">
 				<form>
 					<div class="name">				
-						<label for="name">სახელი, გვარი:</label>
-						<input type="text" id="name" placeholder="მაგ. გიორგი ქავთარაძე" required>
+						<!-- <label for="name">სახელი, გვარი:</label> -->
+						<input type="text" id="name" placeholder="სახელი, გვარი" required>
 					</div>
 
 					<div class="email">				
-						<label for="email">ელ. ფოსტა:</label>
-						<input type="email" id="email" placeholder="example@gmail.com" required>
+						<!-- <label for="email">ელ. ფოსტა:</label> -->
+						<input type="email" id="email" placeholder="ელ. ფოსტა" required>
 					</div>
 
 					<div class="phone">				
-						<label for="phone">ტელეფონის ნომერი:</label>
-						<input type="tel" id="phone" placeholder="+995 555 12 34 56" required>
+						<!-- <label for="phone">ტელეფონის ნომერი:</label> -->
+						<input type="tel" id="phone" placeholder="ტელეფონის ნომერი" required>
 					</div>
 
 					<div class="message">				
-						<label for="message">შეტყობინება:</label>
-						<textarea id="message" placeholder="დაწერე ტექსტი..." required></textarea>
+						<!-- <label for="message">შეტყობინება:</label> -->
+						<textarea id="message" placeholder="შეტყობინება" required></textarea>
 					</div>
 
 					<button type="submit">გაგზავნა</button>
@@ -133,7 +143,6 @@
 		<div class="footer-bottom">
 			<p>ყველა უფლება დაცულია</p>
 			<p>დამზადებულია ❤️ -ით</p>
-			<p>SmartWeb</p>
 			<img src="src/images/smartweb.png" alt="smartweb">
 		</div>
 
